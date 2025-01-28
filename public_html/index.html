@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Printer Comparison</title>
+
+    <style>
+        /* === General Styles === */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            text-align: center; /* Centers the heading */
+            margin: 0;
+            padding: 0;
+        }
+
+        h2 {
+            color: #333;
+            margin-top: 20px;
+        }
+
+        /* === Table Container for Centering === */
+        .table-container {
+            display: flex;
+            justify-content: center; /* Centers the table horizontally */
+            margin-top: 20px;
+        }
+
+        /* === Table Styling === */
+        table {
+            width: 80%;
+            max-width: 800px;
+            border-collapse: collapse; /* Removes gaps between borders */
+            background: white;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow effect */
+            border-radius: 8px; /* Rounded corners */
+            overflow: hidden; /* Ensures content stays within rounded corners */
+        }
+
+        /* === Table Header Styles === */
+        th {
+            background-color: #4CAF50; /* Green background */
+            color: white; /* White text */
+            text-transform: uppercase; /* Uppercase header text */
+            font-size: 14px;
+            padding: 12px;
+        }
+
+        /* === Table Cell (td) Styling === */
+        td {
+            border: 1px solid #ddd; /* Light gray border */
+            padding: 12px;
+            text-align: left;
+            background-color: #fff; /* White background */
+        }
+
+        /* Alternating row colors for better readability */
+        tr:nth-child(even) td {
+            background-color: #f2f2f2; /* Light gray */
+        }
+
+        /* === List Styling (for Advantages & Disadvantages) === */
+        ul {
+            padding-left: 20px;
+            margin: 0;
+        }
+
+        /* === Image Styling === */
+        img {
+            width: 150px; /* Fixed width */
+            height: auto; /* Keeps aspect ratio */
+            display: block; /* Centers inside table cell */
+            margin: auto;
+            border-radius: 5px; /* Rounded corners */
+            border: 1px solid #ddd; /* Light gray border */
+        }
+
+        /* === Link Styling (for "Learn More" Section) === */
+        a {
+            color: #007BFF; /* Blue color */
+            text-decoration: none; /* Removes underline */
+            font-weight: bold;
+        }
+
+        /* Underline on hover for better user interaction */
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Page Title -->
+    <h2>Printer Comparison</h2>
+
+    <!-- Table Container to Keep It Centered -->
+    <div class="table-container">
+        <table>
+            <!-- Table Headers -->
+            <tr>
+                <th>Type</th>
+                <th>Advantage</th>
+                <th>Disadvantage</th>
+                <th>Picture</th>
+                <th><i>Learn More</i></th>
+            </tr>
+
+            <!-- Inkjet Printer Row -->
+            <tr>
+                <td>Inkjet</td>
+                <td>
+                    <ul>
+                        <li>Relatively inexpensive to buy</li>
+                        <li>Can produce high-quality color printouts, such as photographs</li>
+                    </ul>
+                </td>
+                <td>
+                    <ul>
+                        <li>Ink cartridges are expensive</li>
+                        <li>Slower than laser printers</li>
+                    </ul>
+                </td>
+                <td>
+                    <!-- Inkjet Printer Image -->
+                    <img src="InkjetPrinter.jpg" alt="Inkjet Printer">
+                </td>
+                <td>
+                    <!-- Inkjet Printer Information Link -->
+                    <a href="https://en.wikipedia.org/wiki/Inkjet_printing">More about Inkjet Printers</a>
+                </td>
+            </tr>
+
+            <!-- Laser Printer Row -->
+            <tr>
+                <td>Laser</td>
+                <td>
+                    <ul>
+                        <li>Lower operational costs compared to inkjet printers</li>
+                        <li>Cost-effective for high-volume printing</li>
+                    </ul>
+                </td>
+                <td>
+                    <ul>
+                        <li>Color laser printers are expensive</li>
+                    </ul>
+                </td>
+                <td>
+                    <!-- Laser Printer Image -->
+                    <img src="LaserPrinter.jpg" alt="Laser Printer">
+                </td>
+                <td>
+                    <!-- Laser Printer Information Link -->
+                    <a href="https://en.wikipedia.org/wiki/Laser_printing">More about Laser Printers</a>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+</body>
+</html>
